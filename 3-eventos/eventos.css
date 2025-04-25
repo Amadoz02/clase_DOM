@@ -129,7 +129,21 @@ input {
   outline: none;
   font-size: 1rem;
   color: var(--sycamore);
+  background-color: aliceblue;
 }
+.listado{
+  display: block;
+  width: 90%;
+  padding: calc(var(--padding) + 4px);
+  margin: var(--margin) auto;
+  border: solid 1px var(--heavyMetal);
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
+  color: var(--sycamore);
+  background-color: aliceblue;
+}
+
 
 button {
   display: block;
@@ -170,3 +184,44 @@ button:hover {
   background: var(--heavyMetal);
   color: var(--starship);
 }
+
+.campoVacio{
+  border: solid  2px  #aa0505;
+}
+.span {
+  font-size: 1rem;
+  margin: 0 0 var(--margin);
+  color: var(--sycamore);
+}
+.text_second{
+  font-size: 1rem;
+  margin: 0 0 var(--margin);
+  color: var(--sycamore);
+  align-self: baseline  ;
+}
+
+.check {
+  display: flex;
+  align-items: baseline;
+
+  gap: 5px;
+  position: relative;
+}
+
+.politicas {
+
+  width: 15px;
+  height: 15px;
+  border-radius: 5px; /* Esquinas redondeadas */
+  margin: 0px 10px;
+  outline: none;
+  cursor: pointer;
+  
+}
+
+.politicas:checked {
+  background-color: var(--drover);
+  border-color: var(--starship);
+}
+
+

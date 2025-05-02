@@ -33,24 +33,67 @@
               
               </div>
               <div>
-                <select name="ciudad" id="ciudad" class="listado">
+                <select name="ciudad" id="ciudad" class="listado"  >
+                  <option>Seleccione una ciudad</option>
                   <option>Floridablanca</option>
                   <option>bucaramanga</option>
                   <option>giron</option>
                 </select>
               </div>
+              <div class="generos">
+                
+                <input type="radio" name="genero" id="generom" value="Masculino" >
+                <label for="genero">Masculino</label>
+                <input type="radio" name="genero" id="generof" value="Femenino" >
+                <label for="genero">Femenino</label>
+              </div>
               <div>
-                <input type="number" name="documento" placeholder="Documento">
+
+                <input type="number" name="documento" placeholder="Documento" required>
               
               </div>
               <div>
-                <input type="text" name="usuario" placeholder="Usuario">
+                <input type="text" name="usuario" placeholder="Usuario" required>
               
               </div>
               <div>
-                <input type="password" name="Contrasena" placeholder="Contraseña">
+                <input type="password" name="contrasena" placeholder="Contraseña" required>
               
               </div>
+              <fieldset>
+                <legend>Seleccione 3 lenguajes de programación:</legend>
+            
+                <div>
+                    <input type="checkbox" id="js" name="lenguaje[]" value="1"  />
+                    <label for="js">JavaScript</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="html" name="lenguaje[]" value="2" />
+                    <label for="html">HTML</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="css" name="lenguaje[]" value="3" />
+                    <label for="css">CSS</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="csharp" name="lenguaje[]" value="4" />
+                    <label for="csharp">C#</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="java" name="lenguaje[]" value="4" />
+                    <label for="java">Java</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="php" name="lenguaje[]" value="6" />
+                    <label for="php">PHP</label>
+                </div>
+            </fieldset>
+            
             
               <div class="check">
                 <input type="checkbox" class="politicas" id="politicas" name="politicas">

@@ -207,7 +207,24 @@ button:hover {
   gap: 5px;
   position: relative;
 }
+.generos{
+  display: flex;
+  align-items: baseline;
+  padding-right: 50px;
+  gap: 10px;
+  position: relative;
 
+
+}
+option[type="radio"] {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: rgb(177, 223, 220);
+  z-index: -1;
+}
 .politicas {
 
   width: 15px;
@@ -224,4 +241,94 @@ button:hover {
   border-color: var(--starship);
 }
 
+/* 
+fieldset {
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px;
+  background-color: #fcefd2d8;
+  display: flex;
+  flex-direction: column;
+}
 
+legend {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #001ea5;
+  padding: 15px 0 0 0;
+
+}
+
+
+
+fieldset input[type="checkbox"] {
+  accent-color: #007bff;
+  width: 18px;
+  height: 18px;
+}
+
+fieldset div label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+fieldset div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+fieldset input[type="checkbox"]:checked + label {
+  color: #007bff;
+  font-weight: bold;
+} */
+/* Estilos para el fieldset */
+fieldset {
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Estilos para el legend */
+legend {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  padding: 18px 0 0 0 ;
+}
+
+/* Espaciado entre opciones */
+fieldset div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+  text-align: left;
+  
+}
+
+/* Estilo de los checkboxes */
+fieldset div input[type="checkbox"] {
+  accent-color: #007bff;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+}
+
+
+fieldset div label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  padding-left: 15%;
+}
+
+fieldset div input[type="checkbox"]:checked + label {
+  color: #007bff;
+  font-weight: bold;
+}
